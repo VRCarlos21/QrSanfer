@@ -1,0 +1,172 @@
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .modal-container ion-card {
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-container ion-item {
+    --padding-start: 0;
+  }
+  
+  .modal-container ion-label {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .modal-container ion-button {
+    margin: 24px 16px 0 16px;  }
+
+    .success-modal {
+        --background: #e8f5e9; /* Fondo verde claro */
+        --color: #2e7d32; /* Texto verde oscuro */
+      }
+      
+      .success-modal ion-icon {
+        font-size: 64px;
+        margin: 16px 0;
+      }
+      
+      .success-modal h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .success-modal p {
+        font-size: 16px;
+      }
+      .image-cropped {
+        width: 100%; /* Ocupará todo el ancho disponible */
+        max-width: 500px; /* Limita el tamaño en escritorio */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* La imagen se ajusta sin recortar */
+      }
+      
+      /* Para pantallas pequeñas (móviles) */
+      @media (max-width: 768px) {
+        .image-cropped {
+          width: 100%;
+          height: 400px; /* Define un alto fijo */
+          object-fit: cover; /* Recorta la imagen */
+        }
+      }
+      
+
+
+
+
+
+
+      /* Estilos base */
+.user-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 3px solid #ddd;
+}
+
+.user-card h2 {
+  margin-top: 15px;
+  font-size: 2rem; /* Tamaño relativo */
+  color: #333;
+}
+
+.user-card p {
+  color: #666;
+  font-size: 1.2rem; /* Tamaño relativo */
+}
+
+/* Estilos para las tarjetas internas */
+.user-card ion-card {
+  margin: 10px 0;
+}
+
+.user-card ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.user-card ion-button {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  font-size: 0.9rem; /* Tamaño relativo */
+  white-space: nowrap; /* Evita que el texto se encime */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .user-card {
+    padding: 15px;
+  }
+
+  .user-photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .user-card h2 {
+    font-size: 1.5rem; /* Más pequeño en móviles */
+  }
+
+  .user-card p {
+    font-size: 1rem; /* Más pequeño en móviles */
+  }
+
+  .user-card ion-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (ej. móviles pequeños) */
+@media (max-width: 480px) {
+  .user-card {
+    padding: 10px;
+  }
+
+  .user-photo {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 3px solid #ddd;
+  }
+
+  .user-card h2 {
+    font-size: 1.3rem; /* Ajuste adicional para pantallas muy pequeñas */
+  }
+
+  .user-card p {
+    font-size: 0.9rem; /* Ajuste adicional para pantallas muy pequeñas */
+  }
+
+  .user-card ion-button {
+    --padding-start: 6px;
+    --padding-end: 6px;
+    font-size: 0.7rem; /* Ajuste adicional para pantallas muy pequeñas */
+  }
+}
+
+
+

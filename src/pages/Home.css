@@ -1,0 +1,170 @@
+/* Estilos para el formulario de creación */
+.form-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para las tarjetas de oficinas */
+  .office-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .office-card ion-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .office-icon {
+    font-size: 2rem;
+    color: var(--ion-color-primary);
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los botones de acción */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .button-group ion-button {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  /* Estilos para el grid responsive */
+  @media (max-width: 768px) {
+    .office-card {
+      margin-bottom: 15px;
+    }
+  }
+
+  
+  
+  /* Agrega esto en tu archivo de estilos CSS */
+.fixed-width-col {
+  flex: 0 0 150px; /* Ancho fijo de 150px */
+}
+
+.flexible-col {
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+.button-col {
+  flex: 0 0 100px; /* Ancho fijo para la columna de botones */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  gap: 8px; /* Espacio entre los botones */
+}
+.align-center {
+  align-items: center;
+}
+
+/* Agrega esto en tu archivo de estilos CSS */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/* Agrega esto en tu archivo de estilos CSS */
+.min-width-col {
+  min-width: 150px;
+}
+
+
+
+
+
+/* Estilos generales para las tarjetas de usuario */
+.card-user {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el campo de búsqueda */
+.search-input {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las columnas en dispositivos móviles */
+@media (max-width: 768px) {
+  .card-user ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+/* Estilos para escritorio */
+  .desktop-row {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .card-user ion-col {
+    padding: 8px; /* Espaciado interno para evitar compactación */
+    flex: 1; /* Ocupa el espacio disponible */
+  }
+
+  /* Ajustes de ancho para cada columna */
+  .employee-number {
+    flex: 0 0 10%; /* Ancho fijo para el número de empleado */
+  }
+
+  .employee-name {
+    flex: 0 0 15%; /* Ancho fijo para el nombre */
+  }
+
+  .employee-email {
+    flex: 0 0 25%; /* Ancho fijo para el correo electrónico */
+  }
+
+  .employee-role {
+    flex: 0 0 15%; /* Ancho fijo para el rol */
+  }
+
+  .employee-status {
+    flex: 0 0 10%; /* Ancho fijo para el estado */
+  }
+
+  .button-container {
+    flex: 0 0 15%; /* Ancho fijo para los botones */
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+/* Estilos para el texto con puntos suspensivos */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos para los botones */
+.button-container {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos para el badge de estado */
+ion-badge {
+  font-size: 0.9rem;
+  padding: 6px 10px;
+}

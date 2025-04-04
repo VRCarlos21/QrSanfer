@@ -1,0 +1,7 @@
+{
+  "name": "QRSystem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
