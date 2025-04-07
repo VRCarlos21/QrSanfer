@@ -6,6 +6,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/', // Esta línea es crucial para las rutas de los assets
   plugins: [
     react(),
     legacy()

@@ -1,0 +1,55 @@
+[debug] [2025-04-07T06:36:47.849Z] ----------------------------------------------------------------------
+[debug] [2025-04-07T06:36:47.860Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joava\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-04-07T06:36:47.862Z] CLI Version:   14.1.0
+[debug] [2025-04-07T06:36:47.862Z] Platform:      win32
+[debug] [2025-04-07T06:36:47.863Z] Node Version:  v20.11.0
+[debug] [2025-04-07T06:36:47.864Z] Time:          Mon Apr 07 2025 00:36:47 GMT-0600 (hora estándar central)
+[debug] [2025-04-07T06:36:47.864Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-07T06:36:49.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-07T06:36:49.015Z] > authorizing via signed-in user (a3521110171@alumno.uttehuacan.edu.mx)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-04-07T06:36:49.071Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-07T06:36:49.072Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-07T06:36:49.073Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-04-07T06:36:49.098Z] [hub] writing locator at C:\Users\joava\AppData\Local\Temp\hub-qrsystem-6d5e9.json
+[debug] [2025-04-07T06:36:49.215Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:49.216Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:49.224Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/qrsystem-6d5e9/sites 
+[debug] [2025-04-07T06:36:50.184Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/qrsystem-6d5e9/sites 200
+[debug] [2025-04-07T06:36:50.185Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/qrsystem-6d5e9/sites {"sites":[{"name":"projects/qrsystem-6d5e9/sites/qrsystem-6d5e9","defaultUrl":"https://qrsystem-6d5e9.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-07T06:36:50.186Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:50.186Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:50.187Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9/webApps/-/config [none]
+[debug] [2025-04-07T06:36:50.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9/webApps/-/config 200
+[debug] [2025-04-07T06:36:50.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9/webApps/-/config {"projectId":"qrsystem-6d5e9","appId":"1:489148174691:web:66a9d3d3f95f187ce50356","storageBucket":"qrsystem-6d5e9.firebasestorage.app","apiKey":"AIzaSyA3LTpwxfsd-g9LyF-gsHXw6ktOXCIG7W0","authDomain":"qrsystem-6d5e9.firebaseapp.com","messagingSenderId":"489148174691","measurementId":"G-5L3CJRSJVB"}
+[debug] [2025-04-07T06:36:50.765Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:50.765Z] Checked if tokens are valid: true, expires at: 1744008773858
+[debug] [2025-04-07T06:36:50.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9 [none]
+[debug] [2025-04-07T06:36:50.922Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9 200
+[debug] [2025-04-07T06:36:50.922Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/qrsystem-6d5e9 {"projectId":"qrsystem-6d5e9","projectNumber":"489148174691","displayName":"QrSanfer","name":"projects/qrsystem-6d5e9","resources":{"hostingSite":"qrsystem-6d5e9"},"state":"ACTIVE","etag":"1_b57278fe-9c0b-4d44-8568-f299c730e94f"}
+[info] i  hosting[qrsystem-6d5e9]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[qrsystem-6d5e9]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2025-04-07T06:36:51.144Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:02 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:02 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:02 +0000] "GET /assets/index-xEEIGjMB.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:02 +0000] \"GET /assets/index-xEEIGjMB.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:03 +0000] "GET /assets/index-eJIsSCfg.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:03 +0000] \"GET /assets/index-eJIsSCfg.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:03 +0000] "GET /manifest.json HTTP/1.1" 200 459 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:03 +0000] \"GET /manifest.json HTTP/1.1\" 200 459 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:04 +0000] "GET /assets/swipe-back-aQkfUIWz.js HTTP/1.1" 200 682 "http://127.0.0.1:5000/assets/index-eJIsSCfg.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:04 +0000] \"GET /assets/swipe-back-aQkfUIWz.js HTTP/1.1\" 200 682 \"http://127.0.0.1:5000/assets/index-eJIsSCfg.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Apr/2025:06:37:04 +0000] "GET /assets/index9-BryvrH2_.js HTTP/1.1" 200 - "http://127.0.0.1:5000/assets/index-eJIsSCfg.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Apr/2025:06:37:04 +0000] \"GET /assets/index9-BryvrH2_.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/assets/index-eJIsSCfg.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\""}}
