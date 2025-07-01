@@ -83,10 +83,10 @@ const Home: React.FC<HomeProps> = ({ handleSignOut }) => {
   };
 
   const handleSubmit = async () => {
-    if (!pdfFile) {
-      alert("Por favor, sube un PDF.");
-      return;
-    }
+    //if (!pdfFile) {
+      //alert("Por favor, sube un PDF.");
+     // return;
+    //}
     if (!isValidEmployeeNumber(employeeNumber)) {
       alert("El número de empleado debe comenzar con 'M' seguido de números.");
       return;
@@ -99,9 +99,10 @@ const Home: React.FC<HomeProps> = ({ handleSignOut }) => {
     setLoading(true);
     try {
       // Subir PDF a Firebase Storage
-      const pdfStorageRef = ref(storage, `pdfs/${Date.now()}_${pdfFile.name}`);
-      await uploadBytes(pdfStorageRef, pdfFile);
-      const pdfUrl = await getDownloadURL(pdfStorageRef);
+      //const pdfStorageRef = ref(storage, `pdfs/${Date.now()}_${pdfFile.name}`);
+      //await uploadBytes(pdfStorageRef, pdfFile);
+      //const pdfUrl = await getDownloadURL(pdfStorageRef);
+      const pdfUrl = ""; // o null si se prefiere
 
       // Guardar la información en Firestore
       await addDoc(collection(db, "requests"), {
@@ -204,10 +205,11 @@ const Home: React.FC<HomeProps> = ({ handleSignOut }) => {
             <IonLabel position="stacked">Fecha de Vencimiento del Permiso</IonLabel>
             <IonInput type="date" value={date} onIonChange={(e) => setDate(e.detail.value!)} />
           </IonItem>
-          <IonItem>
+          {/* Para no subir el PDF */}
+          {/*<IonItem>
             <IonLabel position="stacked">Subir PDF</IonLabel>
             <input type="file" accept="application/pdf" onChange={handleFileChange} />
-          </IonItem>
+          </IonItem>*/}
           <IonButton
             expand="full"
             onClick={handleSubmit}
