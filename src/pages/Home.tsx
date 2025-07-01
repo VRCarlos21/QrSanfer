@@ -205,7 +205,7 @@ const Home: React.FC<HomeProps> = ({ handleSignOut }) => {
             <IonLabel position="stacked">Fecha de Vencimiento del Permiso</IonLabel>
             <IonInput type="date" value={date} onIonChange={(e) => setDate(e.detail.value!)} />
           </IonItem>
-          {/* Para no subir el PDF */}
+          {/* Para subir el PDF */}
           {/*<IonItem>
             <IonLabel position="stacked">Subir PDF</IonLabel>
             <input type="file" accept="application/pdf" onChange={handleFileChange} />
